@@ -7,4 +7,9 @@
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h2>@Model{
+            Settings.FirstName Settings.LastName
+        }
+    </h2>
+    <h3 class="bg-danger text-white">@Model.Settings.TopSecret</h3>
 </div>
